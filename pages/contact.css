@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+/* ---------------------------------------------Main------------------------------------------------- */
+
+main {
+    background-color: rgb(240, 227, 218);
+    font-size: 5em;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.2fr 0.2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+}
+
+/* ---------------------------------------------Navigation Bio Bar----------------------------------- */
+
+.navigationcontactbar {
+    background-color: seashell;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.2em;
+}
+
+.navigationcontactbar div a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigationcontactbar div a:hover {
+    color: darkorange;
+    font-size: 0.8em;
+}
+
+/* ---------------------------------------------Contact------------------------------------------------- */
+
+.contact {
+    background-color: rgba(220, 20, 60, 0.644);
+    grid-row: 2/3;
+    grid-column: 1/4;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 2em;
+    box-shadow: 2px 2px 2px black inset;
+    animation: moving 5s infinite alternate linear;
+}
+
+.contactname {
+    font-size: 1em;
+}
+
+.contactname:hover {
+    color: darkorange;
+}
+
+@keyframes moving {
+    from {
+        padding-right: 60%;
+    }
+    to {
+        padding-left: 60%;
+    }
+}
+
+/* ---------------------------------------- Main CV Upper---------------------------------------- */
+
+
+.contactbody {
+    background-color: seashell;
+    font-size: 1em;
+    grid-row: 3/5;
+    grid-column: 1/4;
+    display: flex;
+    
+    align-items: center;
+    
+    
+  
+    
+   
+
+}
+
+
+
+.form {
+    /* background-color: rgb(240, 227, 218); */
+    
+    display: flex;
+    flex-direction: column;
+    padding-right: 2em;
+    padding-left: 2em;
+    justify-content: space-evenly;
+    width: 100vh;
+    height: 60vh;
+    /* border-radius: 1em;
+    box-shadow: 0px 0px 10px 1px   black inset; */
+    margin-left: 1em;
+    
+    /*width: 100vw;
+    height: 100vh;*/
+
+}
+
+.getin {
+    background-color: rgb(240, 227, 218);
+    font-size: 2em;
+    padding-right: 0.1em;
+    padding-left: 0.3em;
+    
+    border-radius: 10px;
+    /* border-radius: 1em;
+    box-shadow: 0px 0px 5px 1px   black inset; */
+    /* animation: moving 5s infinite alternate linear; */
+    align-items: center;
+    
+}
+
+.continput {
+    background-color: rgb(240, 227, 218);
+    width: 50%;
+    height: 10%;
+    border-radius: 10px;
+    padding-left: 0.5em;
+
+}
+
+.continput-comments {
+    background-color: rgb(240, 227, 218);
+    width:100%;
+    height: 50%;
+    padding-left: 0.5em;
+    
+    /* box-shadow: 0px 0px 5px 1px   black inset; */
+    
+
+}
+
+.click {
+    background-color: darkorange;
+    width:15%;
+    height: 10%;
+    border-radius: 10em;
+    cursor: pointer;
+    
+    
+}
+
+
+/*.watermelon {
+    width: 20px;
+    height: 20px;
+}*/
+
+
+/* -----------------------------------------Footer------------------------------------------------- */
+
+.foot {
+    background-color: seashell;
+    grid-row: 5/6;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot .text {
+    color: darkorange;
+}
+
+.foot .text:hover {
+    color: mediumblue;
+}
+
+.fab {
+    margin-right: 10px;
+    font-size: 1.6em;
+    color: darkorange;
+}
+
+.fa-facebook:hover {
+    color: blue;
+}
+
+.fa-instagram:hover {
+    color: maroon;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------Smaller View------------------------------------------------ */
+
+/* ------------------------------------------------800px------------------------------------------------ */
+
+/* ------------------------------------------------800px------------------------------------------------ */
+
+@media (max-width: 800px) {
+    main {
+        grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 0.3em;
+    }
+    .navigationcontactbar {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        justify-content: space-around;
+       
+    }
+
+
+    .contact {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        animation: moving 2s infinite alternate linear;
+        margin-right: 0.1em;
+        margin-left: 0.1em;
+        /* margin-top: -1em;
+        margin-bottom: -1em; */
+    }
+
+
+    @keyframes moving {
+        from {
+            padding-right: 40%;
+        }
+        to {
+            padding-left: 40%;
+        }
+    }
+
+
+    .contactbody {
+        background-color: seashell;
+        font-size: 1em;
+        grid-row: 3/5;
+        grid-column: 1/2;
+        
+        justify-content: space-around;
+        width: 100vw;
+       
+    }
+
+    .getin {
+        font-size: 1.5em;
+        padding-right: 0.1em;
+        padding-left: 0.3em;
+        
+    }
+
+    /* .getin:hover {
+        background-color: aliceblue;
+    } */
+
+
+    .form {
+        width: 100vw;
+        height: 60vh;
+        padding-left: 1em;
+        padding-right: 1em;
+        justify-content: space-evenly;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .continput {
+        background-color: seashell;
+        width: 70%;
+        height: 10%;
+    }
+
+    .continput-comments {
+        background-color: seashell;
+        width: 100%;
+        height: 30%;
+        
+    }
+
+    .click {
+        background-color: darkorange;
+        width:25%;
+        height: 10%;
+        border-radius: 10em;
+        
+    }
+    
+        
+
+
+
+
+
+
+
+    .foot {
+        font-size: 0.6em;
+        grid-row: 5/6;
+        grid-column: 1/2;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+}
