@@ -1,7 +1,7 @@
 
 
 function contactMe () {
-    document.getElementById ("sqheadname").innerHTML = "+91 9167-553-218";
+    document.getElementById ("sqheadname").innerHTML = "Please Visit Contact Page";
 
     document.querySelector ("#sqheadname").style.color = "chartreuse";
     document.querySelector ("#sqheadname").style.animation = "sqfade 0.1s linear 25 alternate";
